@@ -1,0 +1,48 @@
+<section id="when-where">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-6 text-center">
+        <div class="title-section">
+          <i class="iconoir-heart"></i>
+          <h2>Who</h2>
+          <span class="underline"></span>
+        </div>
+        <h3>Our dearest friends and family</h3>
+        <p class="sans-caps">FROM NEAR AND AFAR</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 text-center">
+        <div class="title-section">
+          <i class="iconoir-wristwatch"></i>
+          <h2>When</h2>
+          <span class="underline"></span>
+        </div>
+        <h3><%= t :wedding_date %></h3>
+        <p class="sans-caps">3:30pm &ndash; late</p>
+        <a class="btn btn-outline-tertiary"
+           href="https://calendar.google.com/event?action=TEMPLATE&tmeid=MXM4cGt1NWxibzJ2MXU1dGQ3OGMwMWtvb24gbXlyaWNrdGNAbQ&tmsrc=myricktc%40gmail.com"
+           role="button"
+           target="_blank">
+          Add to Calendar
+        </a>
+      </div>
+      <div class="col-md-6 text-center">
+        <div class="title-section">
+          <i class="iconoir-pine-tree"></i>
+          <h2>Where</h2>
+          <span class="underline"></span>
+        </div>
+        <h3><%= render partial: 'wedding_address' %></h3>
+        <p class="sans-caps">McKenzie Bridge, Oregon</p>
+
+        <a class="btn btn-outline-tertiary"
+           href="https://g.page/LolomaLodge?share"
+           role="button"
+           target="_blank">
+          Find on a map
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

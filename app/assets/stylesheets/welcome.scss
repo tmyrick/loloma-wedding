@@ -1,0 +1,245 @@
+// Place all the styles related to the Welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#hero {
+  background: transparent;
+  background: linear-gradient(rgba(28, 13, 10, 0.4), rgba(28, 13, 10, 0.6)),
+  url("https://kt-wedding.s3.us-west-2.amazonaws.com/jumbo.jpg") center center no-repeat;
+  background-size: cover;
+  height: 100vh;
+
+  * {
+    color: rgba(255, 255, 255, 0.95);
+  }
+
+  h1 {
+    margin-top: 160px;
+  }
+
+  .leader-date {
+    font-size: 17px;
+    letter-spacing: 4px;
+    padding: 12pt;
+    text-transform: uppercase;
+  }
+}
+
+#when-where {
+  h2 {
+    color: theme-color("tertiary");
+  }
+
+  i {
+    color: theme-color("primary");
+  }
+
+  .btn-outline-tertiary:hover {
+    color: #F7F7F7;
+  }
+
+  .btn {
+    margin-bottom: 2em;
+  }
+
+  .underline {
+    border-bottom-color: theme-color("tertiary");
+  }
+}
+
+#destination, #getting-there, #when-where, #schedule, #activities, #lodging, #faq, #rsvp {
+  h2, h3 {
+    text-align: center;
+
+  }
+
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
+#destination, #getting-there {
+  h2, h3, p {
+    color: theme-color("octonary");
+  }
+
+  img {
+    width: 350px;
+  }
+}
+
+#destination {
+  ul {
+    list-style-type: none;
+
+  }
+}
+
+#getting-there {
+  i {
+    color: theme-color("octonary");
+    margin: .5em auto;
+    font-size: 3em;
+  }
+
+  .btn-outline-octonary:hover {
+    color: theme-color("secondary");
+  }
+}
+
+#schedule {
+  color: theme-color("octonary");
+
+  h2, h4, p, td {
+    color: theme-color("octonary");
+  }
+
+  p, tr {
+    font-size: 1rem;
+  }
+
+  .nav-item {
+    font-size: 1.6em;
+    letter-spacing: 4px;
+  }
+
+  .nav-tabs, .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+    background-color: transparent;
+    border: none;
+  }
+
+  .nav-tabs .nav-item a {
+    color: theme-color("octonary");
+  }
+
+  .table th, .table td {
+    border: none;
+  }
+
+  .nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus, .nav-tabs .nav-item a.active {
+    color: theme-color("secondary");
+    border-color: theme-color("quinary") theme-color("quinary") theme-color("secondary");
+  }
+
+  #schedule-tab {
+    padding-bottom: 2em;
+  }
+}
+
+#activities {
+  h2 {
+    color: theme-color("secondary");
+  }
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  li {
+    padding-bottom: .6em;
+    line-height: 1.2em;
+  }
+
+  a {
+    color: theme-color("secondary");
+    text-decoration: underline;
+  }
+
+  a:hover {
+    color: theme-color("quinary");
+  }
+}
+
+#lodging {
+  h2, h4, p {
+    color: theme-color("octonary");
+  }
+  img {
+    width: 80%;
+  }
+
+  .btn {
+    margin-bottom: .75em;
+  }
+
+  .underline {
+    border-bottom-color: theme-color("octonary");
+  }
+}
+
+#faq {
+  h2 {
+    color: theme-color("tertiary");
+  }
+
+  h3 {
+    color: theme-color("octonary");
+    padding-top: 1em;
+  }
+
+  .btn-link {
+    color: theme-color("tertiary");
+  }
+
+  .card, .card-header {
+    background-color: transparent;
+    border: none;
+  }
+}
+
+#registry {
+    background: url("https://kt-wedding.s3.us-west-2.amazonaws.com/plants.jpg") center center no-repeat;
+    background-size: cover;
+
+  .card {
+    margin-bottom: 10em;
+    margin-top: 10em;
+    padding-top: 2em;
+    padding-bottom: 4em;
+  }
+}
+
+#rsvp {
+  h2 {
+    color: theme-color("octonary");
+  }
+}
+
+#welcome-index-footer {
+  background-color: #faebe3;
+  margin-top: 5 * $spacer;
+
+  #welcome-index-footer-cta {
+    padding-top: 8 * $spacer;
+    padding-bottom: 3 * $spacer;
+  }
+
+  #welcome-index-footer-credits {
+    padding-top: 5 * $spacer;
+    padding-bottom: 3 * $spacer;
+
+    small {
+      color: rgba(28, 13, 10, 0.4);
+    }
+  }
+}
+
+@media screen and (max-width: 667px) {
+  #destination, #getting-there, #when-where, #schedule, #activities, #lodging, #faq, #rsvp {
+
+    h2 {
+      font-size: 2.25rem;
+    }
+  }
+
+  #schedule {
+    .nav-item {
+      font-size: .7em;
+      letter-spacing: 2px;
+    }
+
+    .nav-link {
+      padding: 0.5rem .1rem
+    }
+  }
+}
